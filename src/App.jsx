@@ -1,7 +1,7 @@
 const App = () => {
   return (  
     <>
-      <h2 className="flex">Iniciando projeto</h2>
+      <h2 className="">Iniciando projeto</h2>
     </>
   );
 }
