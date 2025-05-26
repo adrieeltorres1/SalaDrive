@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SegurancaDaInformacao from "./pages/SegurancaDainformacao";
 import PageHome from "./components/PageHome";
 
@@ -7,8 +7,9 @@ const App = () => {
     <>
      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PageHome />}/>
-          <Route path="/segurancadainformacao" element={<SegurancaDaInformacao />}/>
+          <Route path="/" element={<PageHome />}>
+              <Route path="segurancadainformacao" element={<SegurancaDaInformacao />}/>
+          </Route>
         </Routes>
      </BrowserRouter>
     </>
@@ -16,3 +17,4 @@ const App = () => {
 }
 
 export default App;
+
