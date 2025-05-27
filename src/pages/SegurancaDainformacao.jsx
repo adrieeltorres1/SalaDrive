@@ -1,3 +1,4 @@
+import { GoDownload } from "react-icons/go";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 
 const SegurancaDaInformacao = () => {
@@ -14,22 +15,24 @@ const SegurancaDaInformacao = () => {
                         </div>
                     </div>
                     <h2 className="flex justify-center text-xl font-bold mt-6">Aula 1</h2>
-                    <div className="flex justify-center gap-5 mt-8">
+                    <div className="flex justify-center gap-2 mt-8">
                         <button
                             className="rounded-md px-6 py-3 bg-[#931813]"
                             onClick={() => {
                                 window.open("https://drive.google.com/uc?export=download&id=1u_U4atesGggF5Oj3nlP4Z6XV-Tt_VsjO", "_blank");
                             }}
-                        >
+                            
+                        >   
                             Visualizar
                         </button>
                          <button
-                            className="rounded-md px-6 py-3 bg-[#931813]"
+                            className="rounded-md px-6 py-3 bg-white text-[#1d1e46] flex items-center gap-1 font-semibold"
                             onClick={() => {
                                 window.open("https://drive.google.com/uc?export=download&id=1u_U4atesGggF5Oj3nlP4Z6XV-Tt_VsjO", "_blank");
                             }}
                         >
                             Baixar
+                            <GoDownload className="size-4 font-semibold"/>
                         </button>
                     </div>
                 </div>
